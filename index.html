@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Best Online Food Delivery Service | FoodMe.com</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" media="screen and (max-width: 894px)" href="css/phone.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libertinus+Math&display=swap" rel="stylesheet">
@@ -16,14 +17,14 @@
         </div>
 
         <ul>
-            <li class="item"><a href="#">Home</a></li>
-            <li class="item"><a href="#">Services</a></li>
-            <li class="item"><a href="#">About Us</a></li>
-            <li class="item"><a href="#">Contact</a></li>
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#services-container">Services</a></li>
+            <li class="item"><a href="#client-section">Our Clients</a></li>
+            <li class="item"><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
-    <section id="home">
+        <section id="home">
         <h1 class="h-primary">Welcome to my Online Mean</h1>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
         <p>Lorem, ipsum dolor sit amet consectetur .</p>
@@ -31,7 +32,7 @@
 
         </section>
 
-        <section class="services-container">
+        <section id="services-container">
             <h1 class="h-primary center">Our Services</h1>
             <div id="services">
                 <div class="box">
@@ -51,5 +52,53 @@
                 </div>
             </div>
         </section>
+
+        <section id="client-section">
+            <h1 class="h-primary center">Our Clients</h1>
+            <div id="clients">
+                <div class="client-item">
+                    <img src="img/logo1.png" alt="Client 1">
+                </div>
+                <div class="client-item">
+                    <img src="img/logo2.jpg" alt="Client 2">
+                </div>
+                <div class="client-item">
+                    <img src="img/logo3.png" alt="Client 3">
+                </div>
+                <div class="client-item">
+                    <img src="img/logo4.png" alt="Client 4">
+                </div>               
+            </div>
+        </section>
+
+        <section id="contact">
+            <h1 class="h-primary center">Contact Us</h1>
+            <div id="contact-box">
+                <form action="">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" placeholder="Enter your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="name">E-Mail</label>
+                        <input type="email" name="email" id="email" placeholder="Enter your E-Mail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Phone Number</label>
+                        <input type="phone" name="phone" id="phone" placeholder="Enter your Phone Number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Message</label>
+                        <textarea name="message" id="message"></textarea>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <footer>
+            <div class="center">
+                Copyright &copy; www.FoodMe.com All rights reserved
+            </div>
+        </footer>
 </body>
 </html>
